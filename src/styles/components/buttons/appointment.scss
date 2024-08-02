@@ -1,0 +1,20 @@
+.book__appointment__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 215px;
+    height: 48px;
+    border-radius: 40px;
+    background: #24BEE0;
+    color: #fff;
+    cursor: pointer;
+    &.shadow{
+        box-shadow: 0 20px 23px -9px rgba(36, 190, 224, 30%) !important;
+    }
+    &:hover{
+        background: #1A7C8D;
+        transition: 0.5s ease;
+    }
+
+}
+

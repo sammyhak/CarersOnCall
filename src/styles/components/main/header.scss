@@ -1,0 +1,91 @@
+.onCallHeader {
+  display: flex;
+  align-items: start;
+
+  .mobileHamburger{
+    display: none;
+  }
+
+  .nav {
+    margin-left: 100px;
+    margin-top: 20px;
+  }
+
+  .book__appointment__btn {
+    margin-left: auto;
+    margin-top: 10px;
+  }
+
+  a {
+    margin-right: 20px !important;
+    &:hover {
+      color: #1a7c8d !important;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .onCallHeader {
+    position: relative;
+    display: block;
+    align-items: start;
+    width: 100%;
+    &.showMobileNav {
+      width: 100vw;
+      height: 100vh;
+      background: #fff;
+      overflow: hidden;
+      margin: unset !important;
+      transition: 3.8s ease-in-out !important;
+    }
+
+    .onCallHeader__logo {
+      img {
+        width: 70px;
+      }
+    }
+
+    .mobileHamburger{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 20px;
+    }
+
+    .nav {
+      display: block !important;
+      margin-top: 20px !important;
+      margin-left: unset;
+      .nav-item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        img {
+          position: absolute;
+        }
+        a {
+          font-size: 24px;
+          color: rgba(6, 33, 38, 70%) !important;
+          font-weight: 400 !important;
+          margin-left: 35px;
+          &.active {
+            color: #b11d34 !important;
+          }
+        }
+      }
+    }
+
+    .book__appointment__btn {
+      margin-left: auto;
+      margin-top: 10px;
+    }
+
+    a {
+      margin-right: 20px !important;
+      &:hover {
+        color: #1a7c8d !important;
+      }
+    }
+  }
+}
