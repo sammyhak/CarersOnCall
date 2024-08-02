@@ -68,11 +68,11 @@ const Header = () => {
           <img src={showMobileNav ? close : hamburger} alt="hamburger" />
         </div>
 
-        {getScreenSize <= 768 && showMobileNav ? (
-          <NavLinks />
-        ) : (
-          getScreenSize > 768 && <NavLinks />
-        )}
+        {/* show links for mobile */}
+        {getScreenSize <= 768 && showMobileNav && <NavLinks />}
+
+        {/* show links for desktop*/}
+        {getScreenSize > 768 && <NavLinks />}
 
         {getScreenSize > 768 && <MakeAppointmentButton />}
       </div>
