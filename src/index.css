@@ -31,6 +31,35 @@ a{
     color: #062126 !important;
 }
 
+.controls {
+    margin-left: auto;
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #24bee0;
+      cursor: pointer;
+      &:hover {
+        background: rgba(36, 190, 224, 30%);
+        box-shadow: 0 10px 13px -9px rgba(36, 190, 224, 0.3) !important;
+      }
+      &:nth-child(1) {
+        margin-right: 10px;
+      }
+
+      &.disabled {
+        background: rgba(196, 196, 196, 20%);
+        cursor: not-allowed;
+        box-shadow: none !important;
+      }
+    }
+  }
+
+
 @media screen and (max-width: 768px) {
     h1{
         font-size: 48px;

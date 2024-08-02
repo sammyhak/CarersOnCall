@@ -1,0 +1,21 @@
+.services {
+  margin-top: 100px;
+  .services__header {
+    width: 100%;
+  }
+
+  .services__content__container{    
+    overflow-x: hidden;
+    margin-top: 30px;
+    .services__content{
+        img{
+            width: 100%;            
+            object-fit: contain;
+        }
+
+        h6{
+            margin-top: 10px;
+        }
+    }
+  }
+}

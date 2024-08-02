@@ -7,8 +7,7 @@ const MakeAppointmentButton = ({ showIcon }) => {
       <div
         className={`
             book__appointment__btn 
-            ${showIcon ? "d-flex" : "d-none d-md-flex"} 
-            ${showIcon && "shadow"}
+            ${showIcon ? "d-flex shadow" : "d-none d-md-flex"}             
         `}
       >
         Make Appointment{" "}

@@ -5,6 +5,7 @@ import healthIcon from "../assets/icons/health.svg";
 import messageIcon from "../assets/icons/Message.svg";
 import userIcon from "../assets/icons/User.svg";
 import "../styles/pages/home.scss";
+import Services from "../components/pagesComponent/services";
 
 const Home = () => {
   return (
@@ -85,6 +86,8 @@ const Home = () => {
             <img src={peopleImage} alt="" />
           </div>
         </div>
+
+        <Services />
       </section>
     </>
   );
