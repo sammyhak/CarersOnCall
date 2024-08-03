@@ -33,6 +33,7 @@ a{
 
 .controls {
     margin-left: auto;
+    outline: none !important;
 
     span {
       display: flex;
@@ -57,11 +58,30 @@ a{
         box-shadow: none !important;
       }
     }
+
+    span::selection {
+        background-color: transparent !important; /* Makes the highlight invisible */
+        color: inherit; /* Keeps the text color unchanged */
+    }
   }
 
 
 @media screen and (max-width: 768px) {
     h1{
         font-size: 48px;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
+    .controls {
+        span{
+            width: 30px;
+            height: 30px;
+            img{
+                height: 10.23px;
+            }
+        }
     }
 }
