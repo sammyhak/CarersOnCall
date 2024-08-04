@@ -6,6 +6,7 @@ import messageIcon from "../assets/icons/Message.svg";
 import userIcon from "../assets/icons/User.svg";
 import "../styles/pages/home.scss";
 import Services from "../components/pagesComponent/services";
+import Why from "../components/pagesComponent/why";
 
 const Home = () => {
   return (
@@ -88,6 +89,7 @@ const Home = () => {
         </div>
 
         <Services />
+        <Why />
       </section>
     </>
   );

@@ -35,7 +35,7 @@ const Services = () => {
 
       setTimeout(() => {
         setSlideIn(true);
-      }, 300);
+      }, 100);
     }
   };
 
@@ -49,7 +49,7 @@ const Services = () => {
 
       setTimeout(() => {
         setSlideIn(true);
-      }, 300);
+      }, 100);
     }
   };
 
