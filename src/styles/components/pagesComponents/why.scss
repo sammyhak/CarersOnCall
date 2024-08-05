@@ -4,28 +4,8 @@
   .why__us__content__container {
     .onCall__card {
         &:hover{
-            background: #fff;
-            border-radius: 30px;
-            box-shadow: 0 24px -14px 61px rgba(15, 151, 181, 14%);
-            margin-top: 10px;
-            transition: top 3s ease;
+          box-shadow: 0 24px 61px -14px rgba(15, 151, 181, 0.104) !important;      
         }
-      .img__icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        background: rgba(36, 190, 224, 10%);
-        img {
-        }
-      }
-
-      p {
-        color: rgba(6, 33, 38, 70%);
-        max-width: 306px;
-      }
     }
   }
 }

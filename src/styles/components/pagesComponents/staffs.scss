@@ -1,0 +1,16 @@
+.staffs {
+  margin-top: 100px;
+  background: rgba(207, 125, 78, 5%);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+  .staffs__content__container {
+    .onCall__card {
+      background: #fff !important;
+      &:hover,
+      &.onCall__Card__Shadow {
+        box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 25%) !important;
+      }
+    }
+  }
+}
