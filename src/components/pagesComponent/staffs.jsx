@@ -43,6 +43,12 @@ const Staffs = () => {
                   <h6 className="mt-4">{data.title}</h6>
 
                   <p>{data.text}</p>
+
+                  <p className="special">+500 Happy patients</p>
+
+                  <p className="mt-4">
+                    iMedical Central Clinic, LA
+                  </p>
                 </div>
               );
             })}

@@ -95,6 +95,9 @@ a{
         p {
             color: rgba(6, 33, 38, 70%);
             max-width: 306px;
+            &.special{
+                color: #0F97B5;
+            }
         }
     }        
 }
