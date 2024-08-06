@@ -8,6 +8,8 @@ import "../styles/pages/home.scss";
 import Services from "../components/pagesComponent/services";
 import Why from "../components/pagesComponent/why";
 import Staffs from "../components/pagesComponent/staffs";
+import FadeInSection from "../hooks/fadeComponent";
+import Banner from "../components/pagesComponent/banner";
 
 const Home = () => {
   return (
@@ -91,14 +93,25 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="container">
-          <Services />
-        </div>
-        <div className="container">
-          <Why />
-        </div>
+        <FadeInSection>
+          <div className="container">
+            <Services />
+          </div>
+        </FadeInSection>
 
-        <Staffs />
+        <FadeInSection>
+          <div className="container">
+            <Why />
+          </div>
+        </FadeInSection>
+
+        <FadeInSection>
+          <Staffs />
+        </FadeInSection>
+
+        <FadeInSection>
+          <Banner />
+        </FadeInSection>
       </section>
     </>
   );

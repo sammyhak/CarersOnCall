@@ -116,7 +116,7 @@ const Services = () => {
 
   return (
     <>
-      <section className="services">
+      <section className="services" id="services">
         <div className="services__header d-flex">
           <h2 className="services__title">Our Services</h2>
 
