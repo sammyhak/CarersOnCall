@@ -5,7 +5,13 @@
 
   .container {
     .row {
-        text-align: center;
+      text-align: center;
+      div {
+        border-right: 1px solid rgba(225, 255, 225, 20%);
+        &:nth-child(3) {
+          border-right: none;
+        }
+      }
       .title {
         color: #fff;
         font-size: 64px;
@@ -14,6 +20,18 @@
 
       p {
         color: #12ccf4;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .banner .container .row {
+    div {
+      border-right: none;
+
+      .title {
+        font-size: 48px;
       }
     }
   }

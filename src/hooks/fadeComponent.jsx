@@ -9,12 +9,11 @@ const FadeInSection = ({ children }) => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsVisible(true);          
-        } else {
-          setIsVisible(false);          
+          setIsVisible(true);
+          observer.unobserve(ref.current); // Stop observing after the element is visible
         }
       },
-      { threshold: 0.2 } // Adjust as needed
+      { threshold: 0.1 } // Adjust as needed
     );
 
     if (ref.current) {
@@ -26,7 +25,7 @@ const FadeInSection = ({ children }) => {
         observer.unobserve(ref.current);
       }
     };
-  }, []);
+  }, [ref.current]);
 
   return (
     <div ref={ref} className={`fade-in-section ${isVisible && "fade-in"}`}>

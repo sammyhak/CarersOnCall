@@ -1,0 +1,31 @@
+.BigBanner{
+    padding: 150px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .banner__text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(6, 33, 38, 70%);
+        color: #fff;
+        border-radius: 32px;
+        padding: 20px 30px;
+        h2{
+            display: contents;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .BigBanner{
+        padding: 100px 0;
+
+        .banner__text{
+            padding: 10px 20px;
+            h2{
+                font-size: 22px !important;
+            }
+        }
+    }
+}

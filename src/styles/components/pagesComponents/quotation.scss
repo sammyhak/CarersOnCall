@@ -1,0 +1,14 @@
+.quotation{
+    .container{
+        .row{
+            .quotation__mark_img{
+                display: flex;
+                justify-content: end;
+                img{
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+        }
+    }
+}

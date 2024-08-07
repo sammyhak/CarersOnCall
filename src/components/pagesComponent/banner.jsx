@@ -6,21 +6,21 @@ const Banner = () => {
       <div className="container">
         <div className="row d-flex">
           <div className="col-lg-4 justify-content-center align-content-center">
-            <h2 className="title">Welcome to our website</h2>
+            <h2 className="title">99%</h2>
 
-            <p>Okay</p>
+            <p>Positive Feedback</p>
           </div>
 
           <div className="col-lg-4 justify-content-center align-content-center">
-            <h2 className="title">Welcome to our website</h2>
+            <h2 className="title">2,300+</h2>
 
-            <p>Okay</p>
+            <p>Happy Clients</p>
           </div>
 
           <div className="col-lg-4 justify-content-center align-content-center">
-            <h2 className="title">Welcome to our website</h2>
+            <h2 className="title">43</h2>
 
-            <p>Okay</p>
+            <p>Professional Staffs</p>
           </div>
         </div>
       </div>
