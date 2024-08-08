@@ -10,6 +10,7 @@ import Why from "../components/pagesComponent/why";
 import Staffs from "../components/pagesComponent/staffs";
 import FadeInSection from "../hooks/fadeComponent";
 import Banner from "../components/pagesComponent/banner";
+import AppointmentForm from "../components/pagesComponent/appointment";
 
 const Home = () => {
   return (
@@ -112,6 +113,8 @@ const Home = () => {
         <FadeInSection>
           <Banner />
         </FadeInSection>
+
+        <AppointmentForm />
       </section>
     </>
   );

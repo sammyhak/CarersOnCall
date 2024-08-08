@@ -1,4 +1,5 @@
 import About from "../pages/about";
+import Contact from "../pages/contact";
 import Home from "../pages/home";
 
 export default function RoutesMain() {
@@ -23,7 +24,7 @@ export default function RoutesMain() {
     },
      {
       path: "/contact",
-      component: "",
+      component: Contact,
       name: "Contact Us",
       description: "Contact",
     },
