@@ -2,8 +2,11 @@ import { useEffect, useState } from "react";
 import prevButton from "../../assets/icons/backArrow.svg";
 import nextButton from "../../assets/icons/forwardArrow.svg";
 import service1 from "../../assets/service1.svg";
-import service2 from "../../assets/service2.svg";
+import service2 from "../../assets/services2.svg";
 import service3 from "../../assets/service3.svg";
+import service4 from "../../assets/service4.svg";
+import service5 from "../../assets/service5.svg";
+import service6 from "../../assets/service6.svg";
 import "../../styles/components/pagesComponents/services.scss";
 import HandleResize from "../../hooks/handleResize";
 
@@ -74,16 +77,16 @@ const Services = () => {
     },
 
     {
-      img: service3,
-      text: "Nursing Services",
+      img: service4,
+      text: "Skilled Nursing Services",
     },
 
     {
-      img: service3,
+      img: service5,
       text: "Pediatric Nursing Services",
     },
     {
-      img: service3,
+      img: service6,
       text: "Therapy Services",
     },
   ]);
