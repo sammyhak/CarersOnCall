@@ -17,6 +17,26 @@ const Header = () => {
 
   const getScreenSize = HandleResize();
 
+
+  const [scrolled, setScrolled] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 50) { // Adjust the scroll value as needed
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup function to remove the event listener
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   useEffect(() => {
     document.body.style.overflow = "auto";
     if (showMobileNav) {
@@ -53,7 +73,7 @@ const Header = () => {
   return (
     <>
       <div
-        className={`onCallHeader ${getScreenSize > 768 && "container"} p-3 ${
+        className={`onCallHeader ${scrolled && "scrolling"} ${getScreenSize > 768 && "container"} p-3 ${
           showMobileNav ? "showMobileNav" : "container"
         }`}
       >

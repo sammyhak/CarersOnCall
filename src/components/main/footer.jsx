@@ -16,10 +16,10 @@ const Footer = () => {
               </div>
 
               <div className="footer__address mt-3">
-                <p>1429 Something Bridge, LA 4281</p>
+                <p>675 E STREET ROAD APT 1306 WARMINSTER, PA 18974</p>
               </div>
 
-              <h6 className="footer__phone">Call: (321) 428 321 3902</h6>
+              <h6 className="footer__phone">Call: (908) 875-5560</h6>
 
               <div className="social__links d-flex">
                 <span className="social">
