@@ -129,7 +129,7 @@ const Services = () => {
                   className="services__content col-lg-4 col-md-6 col-sm-12"
                 >
                   <div className="services__content_img">
-                    <img src={service.img} alt="service image" />
+                    <img src={service.img} alt="service image" loading="lazy" />
                   </div>
 
                   <h6>{service.text}</h6>

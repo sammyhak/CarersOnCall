@@ -24,6 +24,17 @@ const Staffs = () => {
       title: "Dr. Jane Nicholson",
       text: "Leading Diagnostic Doctor",
     },
+    {
+      img: "",
+      title: "Dr. Jane Nicholson",
+      text: "Leading Diagnostic Doctor",
+    },
+
+    {
+      img: "",
+      title: "Dr. Jane Nicholson",
+      text: "Leading Diagnostic Doctor",
+    },
   ]);
 
   return (
@@ -38,7 +49,7 @@ const Staffs = () => {
               return (
                 <div key={index} className="onCall__card p-4 mt-3">
                   <div className="img__icon mt-4">
-                    <img src={data.img} alt="why_us_image" />
+                    {data.img && <img src={data.img} alt="why_us_image" />}
                   </div>
                   <h6 className="mt-4">{data.title}</h6>
 
@@ -46,9 +57,7 @@ const Staffs = () => {
 
                   <p className="special">+500 Happy patients</p>
 
-                  <p className="mt-4">
-                    iMedical Central Clinic, LA
-                  </p>
+                  <p className="mt-4">iMedical Central Clinic, LA</p>
                 </div>
               );
             })}

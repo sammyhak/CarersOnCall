@@ -11,7 +11,7 @@ const About = () => {
 
   useEffect(() => {
     setSeoData({
-      title: "Carer OnCall Services | About Us Page",
+      title: "About Us | Carer OnCall Services",
       description: "A Home Care Services Agency - About Us Page",
       keywords:
         "About Us, About, About Us Page, Health, HealthCare, HealthCare, Old People, Treatment, Services, Home Care, Agency, Carer, Carers",

@@ -20,7 +20,7 @@ const Home = () => {
 
   useEffect(() => {
     setSeoData({
-      title: "Carer OnCall Services | Home Page",
+      title: "Carer OnCall Services LLC",
       description: "A Home Care Services Agency - Home Page",
       keywords:
         "Home, Home Page, Health, HealthCare, HealthCare, Old People, Treatment, Services, Home Care, Agency, Carer, Carers",
@@ -79,7 +79,11 @@ const Home = () => {
                 <div className="row">
                   <div className="col-md-6">
                     <div className="content flex">
-                      <img src={calenderIcon} alt="calender Icon" />
+                      <img
+                        src={calenderIcon}
+                        alt="calender Icon"
+                        loading="lazy"
+                      />
                       <div className="text">
                         <h6>Make an Appointment</h6>
                         <p>Select best time for you.</p>
