@@ -39,6 +39,8 @@
     width: 100%;    
     &.scrolling{
       position: fixed;
+      top: 0;
+      z-index: 999;
       background:  #F7FCFD;
     }
 
