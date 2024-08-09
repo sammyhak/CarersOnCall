@@ -52,7 +52,7 @@ const Services = () => {
 
       setTimeout(() => {
         setSlideIn(true);
-      }, 100);
+      }, 300);
     }
   };
 
