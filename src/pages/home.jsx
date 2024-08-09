@@ -95,8 +95,8 @@ const Home = () => {
                     <div className="content flex">
                       <img src={userIcon} alt="calender Icon" />
                       <div className="text">
-                        <h6>Find the Best Caregivers</h6>
-                        <p>find the best Caregivers in a minute</p>
+                        <h6>Comprehensive Services</h6>
+                        <p>We offer comprehensive services</p>
                       </div>
                     </div>
                   </div>
@@ -156,10 +156,10 @@ const Home = () => {
             <Why />
           </div>
         </FadeInSection>
-
+        {/* 
         <FadeInSection>
           <Staffs />
-        </FadeInSection>
+        </FadeInSection> */}
 
         <FadeInSection>
           <Banner />
