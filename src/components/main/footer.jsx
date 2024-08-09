@@ -38,19 +38,19 @@ const Footer = () => {
 
               <div className="footer__links mt-3 row">
                 <span className="footer__link mt-3">
-                  <Link>Feature</Link>
+                  <Link to="/#services">Our Services</Link>
                 </span>
 
                 <span className="footer__link mt-3">
-                  <Link>About Us</Link>
+                  <Link to="/about">About Us</Link>
                 </span>
 
-                <span className="footer__link mt-3">
+                {/* <span className="footer__link mt-3">
                   <Link>FAQs</Link>
-                </span>
+                </span> */}
 
                 <span className="footer__link mt-3">
-                  <Link>Contact</Link>
+                  <Link to="contact">Contact</Link>
                 </span>
               </div>
             </div>
@@ -69,13 +69,13 @@ const Footer = () => {
                   <Link>Terms of Services</Link>
                 </span>
 
-                <span className="footer__link mt-3">
+                {/* <span className="footer__link mt-3">
                   <Link>Documentations</Link>
                 </span>
 
                 <span className="footer__link mt-3">
                   <Link>Help Center</Link>
-                </span>
+                </span> */}
               </div>
             </div>
 

@@ -1,3 +1,5 @@
+import { useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 import peopleImage from "../assets/people.svg";
 import MakeAppointmentButton from "../components/buttons/appointment";
 import calenderIcon from "../assets/icons/Calendar.svg";
@@ -11,8 +13,53 @@ import Staffs from "../components/pagesComponent/staffs";
 import FadeInSection from "../hooks/fadeComponent";
 import Banner from "../components/pagesComponent/banner";
 import AppointmentForm from "../components/pagesComponent/appointment";
+import { useSEO } from "../contexts/SEOcontext";
 
 const Home = () => {
+  const { setSeoData } = useSEO();
+
+  useEffect(() => {
+    setSeoData({
+      title: "Carer OnCall Services | Home Page",
+      description: "A Home Care Services Agency - Home Page",
+      keywords:
+        "Home, Home Page, Health, HealthCare, HealthCare, Old People, Treatment, Services, Home Care, Agency, Carer, Carers",
+    });
+  }, [setSeoData]);
+
+  const location = useLocation();
+
+  const servicesRef = useRef(null);
+
+  // Define a function to scroll the element into view
+  const scrollToServices = () => {
+    if (servicesRef.current) {
+      servicesRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
+  const appointmentRef = useRef(null);
+
+  // Define a function to scroll the element into view
+  const scrollToAppointment = () => {
+    if (appointmentRef.current) {
+      appointmentRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
+  useEffect(() => {
+    if (location.hash.includes("#services")) {
+      scrollToServices();
+    } else if (location.hash.includes("#appointment")) {
+      scrollToAppointment();
+    }
+  }, [location]);
   return (
     <>
       <section className="home">
@@ -95,7 +142,7 @@ const Home = () => {
         </div>
 
         <FadeInSection>
-          <div className="container">
+          <div className="container" ref={servicesRef}>
             <Services />
           </div>
         </FadeInSection>
@@ -114,7 +161,9 @@ const Home = () => {
           <Banner />
         </FadeInSection>
 
-        <AppointmentForm />
+        <div ref={appointmentRef}>
+          <AppointmentForm />
+        </div>
       </section>
     </>
   );

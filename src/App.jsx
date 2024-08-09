@@ -1,16 +1,20 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useState } from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import RoutesMain from "./router/routes";
 import Header from "./components/main/header";
 import Footer from "./components/main/footer";
+import { SEOProvider } from "./contexts/SEOcontext";
+import SEOManager from "./contexts/SEPmanager";
 
 function App() {
   const [routes] = useState(RoutesMain());
 
   return (
     <>
-      <Router>        
+      <SEOProvider>
+        <SEOManager />
+        <Router>
           <Header />
           <Routes>
             {routes.map((route, index) => (
@@ -21,8 +25,9 @@ function App() {
               ></Route>
             ))}
           </Routes>
-          <Footer />        
-      </Router>
+          <Footer />
+        </Router>
+      </SEOProvider>
     </>
   );
 }

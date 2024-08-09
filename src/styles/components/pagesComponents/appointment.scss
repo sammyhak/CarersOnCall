@@ -2,7 +2,7 @@
   margin: 100px 0;
   .container {
     .appointment__form {
-        max-width: 776px;
+      max-width: 776px;
       .input {
         display: flex;
         align-items: center;
@@ -29,31 +29,31 @@
         }
       }
 
-      .appointment__form__submit__btn{
+      .appointment__form__submit__btn {
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 20px 30px;
         border-radius: 47px;
-        background: #24BEE0;
+        background: #24bee0;
         width: 155px;
         cursor: pointer;
-        &:hover{
-            border: 2px solid rgba(0, 0, 0, 30%);
+        &:hover {
+          border: 2px solid rgba(0, 0, 0, 30%);
         }
-        button{
-            position: relative;
-            background: transparent;
-            border: none;
-            outline: none;
-            color: #fff;    
-            font-weight: 600;        
+        button {
+          position: relative;
+          background: transparent;
+          border: none;
+          outline: none;
+          color: #fff;
+          font-weight: 600;
         }
 
-        img{                
-         display: flex;
-         margin-left: auto;
+        img {
+          display: flex;
+          margin-left: auto;
         }
       }
     }

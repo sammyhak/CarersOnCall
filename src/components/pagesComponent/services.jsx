@@ -72,40 +72,6 @@ const Services = () => {
       img: service3,
       text: "Health Monitoring",
     },
-
-    {
-      img: service3,
-      text: "Health Monitoring",
-    },
-
-    {
-      img: service3,
-      text: "Health Monitoring",
-    },
-
-    {
-      img: service3,
-      text: "Health Monitoring",
-    },
-    {
-      img: service1,
-      text: "Personal Care",
-    },
-
-    {
-      img: service2,
-      text: "Companionship",
-    },
-
-    {
-      img: service2,
-      text: "tESTO",
-    },
-
-    {
-      img: service2,
-      text: "SHIT",
-    },
   ]);
 
   const [slicedServicesList, setSlicedServiceList] = useState([]);
