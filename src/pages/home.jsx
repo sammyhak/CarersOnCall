@@ -131,10 +131,10 @@ const Home = () => {
                 </div>
                 <div className="col-md-6 align-content-center">
                   <p className="appointment__time">
-                    Mon-Fri <span className="time">10AM-9PM</span>
+                    Mon-Fri <span className="time">9AM-5PM</span>
                   </p>
                   <p className="appointment__time">
-                    Sat <span className="time">10AM-2PM</span>
+                    <span className="time">Off Hours OnCall Service: anytime</span>
                   </p>
                 </div>
               </div>

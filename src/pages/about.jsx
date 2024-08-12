@@ -24,7 +24,7 @@ const About = () => {
       <QuotationParagraph
         center={true}
         texts={[
-          "Carers OnCall Carers is proudly managed and operated by licensed healthcare professionals in the state of Maryland, ensuring the highest standards of care and expertise.",
+          "Carers OnCall Carers is proudly managed and operated by licensed healthcare professionals in the state of Pennsylvania, ensuring the highest standards of care and expertise.",
           "We are a privately owned, licensed, and insured home health agency dedicated to comprehensive patient care. We understand the importance of seamlessly managing every facet of care, from addressing individual patient needs to aligning with physician recommendations.",
           "That’s why each of our services is overseen by our experienced professionals, ensuring attentive supervision from the initial consultation through to recovery or the completion of treatment.",
         ]}
