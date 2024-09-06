@@ -20,6 +20,11 @@ const Footer = () => {
               </div>
 
               <h6 className="footer__phone">Call: (908) 875-5560</h6>
+              <h6 className="footer__phone">
+                <a href="mailto:health@carersoncall.com">
+                  Email: health@carersoncall.com
+                </a>
+              </h6>
 
               <div className="social__links d-flex">
                 <span className="social">

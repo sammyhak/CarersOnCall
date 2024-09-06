@@ -9,11 +9,10 @@ import userIcon from "../assets/icons/User.svg";
 import "../styles/pages/home.scss";
 import Services from "../components/pagesComponent/services";
 import Why from "../components/pagesComponent/why";
-import Staffs from "../components/pagesComponent/staffs";
 import FadeInSection from "../hooks/fadeComponent";
-import Banner from "../components/pagesComponent/banner";
 import AppointmentForm from "../components/pagesComponent/appointment";
 import { useSEO } from "../contexts/SEOcontext";
+import Patients from "../components/pagesComponent/patients";
 
 const Home = () => {
   const { setSeoData } = useSEO();
@@ -162,7 +161,7 @@ const Home = () => {
         </FadeInSection> */}
 
         <FadeInSection>
-          <Banner />
+          <Patients />
         </FadeInSection>
 
         <div ref={appointmentRef}>

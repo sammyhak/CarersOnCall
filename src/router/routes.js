@@ -1,6 +1,7 @@
 import About from "../pages/about";
 import Contact from "../pages/contact";
 import Home from "../pages/home";
+import Mock from "../pages/mock";
 
 export default function RoutesMain() {
   return [
@@ -28,5 +29,12 @@ export default function RoutesMain() {
       name: "Contact Us",
       description: "Contact",
     },
+    {
+      path: "/spiidpay",
+      component: Mock,
+      name: "SpiidPay",
+      description: "Mock Up",
+    },
+
   ];
 }
